@@ -769,13 +769,9 @@ namespace UnitTestProject
             JsonReader reader = new JsonReader(json);
             reader.SkipNonMembers = false;
 
-            UiWindow window2 = JsonMapper.ToObject<UiWindow>(reader);
-            Debug.WriteLine(window2.title);
-
-
             Assert.ThrowsException<JsonException>(() => {
                 UiWindow window = JsonMapper.ToObject<UiWindow>(reader);
-                //window.title = "Unreachable";
+                window.title = "Unreachable";
             });
         }
 

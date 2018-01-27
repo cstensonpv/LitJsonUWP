@@ -462,7 +462,7 @@ namespace LitJson
                         }
 
                     } else {
-                        if (! t_data.IsDictionary) {
+                        //if (! t_data.IsDictionary) {
 
                             if (! reader.SkipNonMembers) {
                                 throw new JsonException (String.Format (
@@ -473,7 +473,7 @@ namespace LitJson
                                 ReadSkip (reader);
                                 continue;
                             }
-                        }
+                        //}
 
                         ((IDictionary) instance).Add (
                             property, ReadValue (
