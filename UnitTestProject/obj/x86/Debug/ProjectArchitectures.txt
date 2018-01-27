@@ -1,0 +1,2 @@
+C:\Users\ettai\source\repos\LitJsonUWP\LitJsonUWP\LitJsonUWP.csproj;neutral
+C:\Users\ettai\source\repos\LitJsonUWP\UnitTestProject\UnitTestProject.csproj;x86
